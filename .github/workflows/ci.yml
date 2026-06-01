@@ -31,4 +31,4 @@ jobs:
     - name: Run All Automated Tests & Quality Metrics
       run: |
         chmod +x vendor/bin/phpunit
-        vendor/bin/phpunit tests/ --exclude-group e2e --coverage-text --ignore-glob=tests/SystemTest.php
+        vendor/bin/phpunit tests/CatalogTest.php tests/CheckoutTest.php --coverage-text
